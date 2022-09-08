@@ -352,7 +352,8 @@ web:
   ## @param web.nodeSelector Node labels for Airflow web pods assignment
   ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector: {}
+  nodeSelector: 
+    flow: "yes"
   ## @param web.podAffinityPreset Pod affinity preset. Ignored if `web.affinity` is set. Allowed values: `soft` or `hard`.
   ## ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity
   ##
@@ -556,7 +557,8 @@ scheduler:
   ## @param scheduler.nodeSelector Node labels for Airflow scheduler pods assignment
   ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector: {}
+  nodeSelector: 
+    flow: "yes"
   ## @param scheduler.podAffinityPreset Pod affinity preset. Ignored if `scheduler.affinity` is set. Allowed values: `soft` or `hard`.
   ## ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity
   ##
@@ -808,7 +810,8 @@ worker:
   ## @param worker.nodeSelector Node labels for Airflow worker pods assignment
   ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector: {}
+  nodeSelector: 
+    flow: "yes"
   ## @param worker.podAffinityPreset Pod affinity preset. Ignored if `worker.affinity` is set. Allowed values: `soft` or `hard`.
   ## ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity
   ##
@@ -1389,7 +1392,8 @@ metrics:
   ## @param metrics.nodeSelector Node labels for pod assignment
   ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector: {}
+  nodeSelector: 
+    flow: "yes"
   ## @param metrics.tolerations Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
