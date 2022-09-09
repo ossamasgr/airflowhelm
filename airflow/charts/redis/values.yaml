@@ -341,7 +341,8 @@ master:
   ## @param master.nodeSelector Node labels for Redis&reg; master pods assignment
   ## ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector: {}
+  nodeSelector:
+    deploy: "flow"
   ## @param master.tolerations Tolerations for Redis&reg; master pods assignment
   ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
@@ -723,7 +724,8 @@ replica:
   ## @param replica.nodeSelector Node labels for Redis&reg; replicas pods assignment
   ## ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector: {}
+  nodeSelector: 
+    deploy: "flow"
   ## @param replica.tolerations Tolerations for Redis&reg; replicas pods assignment
   ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
