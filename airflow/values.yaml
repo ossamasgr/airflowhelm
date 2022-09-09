@@ -32,7 +32,8 @@ fullnameOverride: ""
 clusterDomain: cluster.local
 ## @param extraDeploy Extra objects to deploy (evaluated as a template)
 ##
-extraDeploy: airflow-providers-apache-spark
+extraDeploy: 
+  @param airflow.providers.apache.spark
 ##
 commonLabels: {}
 ## @param commonAnnotations Add annotations to all the deployed resources
